@@ -7,10 +7,6 @@ services:
     ports:
       - "3001:3000"
     restart: always
-    volumes:
-      - /Users/supragyasinghsipai/Desktop/gocart/gocart/CONTRIBUTING.md:/app/CONTRIBUTING.md
-      - gocart-data:/app
-      - log-data:/app/logsclear
 
     networks:
       - app-network
@@ -18,7 +14,3 @@ services:
 networks:
   app-network:
     external: true
-
-volumes:
-  gocart-data:
-  log-data:
